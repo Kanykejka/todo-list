@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">To Do List</h1>
+        <form action="#">
+            <div class="tasks__field" id="tasks__field">
+                <input class="task__input" id="taskInput" type="text" placeholder="What needs to be done?" required>
+                <button class="task__btn" id="taskButton">Add task</button>
+            </div>
+        </form>
+        <div class="wrapper">
+            <ul class="todo__list" id="todoList">
+                <!-- <li>
+                    <div class="todo__list-empty" id="emptyList">
+                        <span>The to-do list is empty</span>
+                    </div>
+                </li> -->
+                <!-- <li class="todo__list-item">
+                    <p class="todo__list-text">task 1</p>
+                    <div class="todo__list-buttons">
+                        <button class="todo__list-btn" data-action="delete" type="button">
+                            <img class="delete__img icon" src="./images/delete.svg" alt="delete">
+                        </button>
+                        <button class="todo__list-btn" data-action="done">
+                            <img class="done__img icon" src="./images/ok.svg" alt="done" width="18" height="18">
+                        </button>
+                    </div>
+                </li> -->
+                <!-- <li class="todo__list-item">
+                    <p class="todo__list-text">task 2</p>
+                    <div class="todo__list-buttons">
+                        <button class="todo__list-btn" id="deleteButton" data-action="delete" type="button">
+                            <img class="delete__img icon" src="./images/delete.svg" alt="delete">
+                        </button>
+                        <button class="todo__list-btn" id="doneButton" data-action="done">
+                            <img class="done__img icon" src="./images/ok.svg" alt="done" width="18" height="18">
+                        </button>
+                    </div>
+                </li> -->
+                
+            </ul>
+        </div>
+        <div class="footer" id="footer">
+            <span class="todo-count" id="todoCount"><span id="count"></span> items left</span>
+            <ul class="filters" id="filters">
+                <li class="all">All</li>
+                <li class="active">Active</li>
+                <li class="completed">Completed</li>
+            </ul>
+            <span class="clear" id="clearCompleted">Clear completed</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    color: #4d4d4d;
+    font-size: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+button, input {
+    color: inherit;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 42px;
+    color: #8141ff;
+}
+
+
+.task__input {
+    padding: 10px;
+    font-style: italic;
+    width: 420px;
+    font-size: 16px;
+    
+}
+
+.task__btn {
+    border: none;
+    background-color: #eda698;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 39px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+                7px 7px 20px 0px rgba(0,0,0,.1),
+                4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.5s ease;
+    color: inherit;
+}
+.task__btn:hover {
+    background-color: #ff7878;
+}
+
+/* .todo__list {
+    
+} */
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.todo__list-empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 150px;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+.todo__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 800px;
+    height: 60px;
+    border: 1px solid #bcbcbc;
+    border-radius: 5px;
+}
+
+.todo__list-text {
+    padding-left: 8px;
+}
+.todo__list-text--done {
+    text-decoration: line-through;
+    color: #ff7878;
+}
+
+.todo__list-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-height: 20px;
+    
+}
+
+.todo__list-btn {
+    border: none;
+    margin-top: 6px;
+    transition: 0.2s opacity ease-in;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+}
+
+.icon {  
+    pointer-events: none;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 800px; */
+    gap: 80px;
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+}
